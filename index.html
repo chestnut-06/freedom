@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090a">
+  <title>Freedom — Jaewon Jo</title>
+  <meta name="description" content="Freedom. A Street Corner Soundtrack response by Jaewon Jo.">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="experience.js" defer></script>
+</head>
+<body>
+  <main id="cinema">
+    <section id="intro" aria-label="Introduction">
+      <button id="enter" aria-label="Enter Freedom, a visual and sound experience by Jaewon Jo">
+        <div class="intro-content">
+          <img class="university" src="assets/utah-asia-campus.png" alt="The University of Utah Asia Campus, South Korea">
+          <div class="author">Jaewon Jo</div>
+          <div class="student-id">u1624903</div>
+          <div class="physical-note">A physical diamond painting (hard copy)</div>
+        </div>
+        <span class="enter-hint">CLICK TO ENTER <span>·</span> SOUND EXPERIENCE</span>
+      </button>
+    </section>
+
+    <section id="gallery" aria-label="Freedom artwork" tabindex="-1" hidden>
+      <div class="backdrop" aria-hidden="true"></div>
+      <div class="shade" aria-hidden="true"></div>
+      <header class="gallery-header">
+        <span class="eyebrow">STREET CORNER SOUNDTRACK</span>
+      </header>
+      <div class="screen">
+        <div class="artwork-column">
+        <div class="artwork-frame">
+        <img id="artwork" alt="Jaewon Jo’s diamond painting of the Golden Gate Bridge" hidden>
+        <button id="about-button" class="text-button artwork-about" aria-expanded="false" aria-controls="about">About the work <span aria-hidden="true">↗</span></button>
+        </div>
+        <div id="placeholder">
+          <span class="eyebrow">ARTWORK PREVIEW</span>
+          <h1>Freedom</h1>
+          <p>The artwork photograph will appear here.</p>
+          <span class="placeholder-note">작품 사진을 기다리고 있습니다</span>
+        </div>
+        </div>
+  <article id="about" class="statement-pane" aria-labelledby="about-title" aria-hidden="true" inert>
+    <button id="about-close" class="statement-close" aria-label="Close artwork description">Close <span aria-hidden="true">×</span></button>
+    <span class="eyebrow">STREET CORNER SOUNDTRACK</span>
+    <h2 id="about-title">Freedom</h2>
+    <p>Cobalt blue skies, a giant red bridge, strong winds blowing through my hair, people passing me by…</p>
+    <p>The freedom and sense of release in that wide-open space… The Golden Gate Bridge is the place I imagine when my soul longs to be free.</p>
+    <p>After coming home from physically and mentally exhausting days, I worked on this diamond painting. A week-long trip, a fleeting moment, and about 24,300 tiny gems placed one by one, each holding a memory.</p>
+    <p>This bridge gave me a moment when I felt that it was okay to simply be, without doing anything or thinking about anything. Freedom. To me, that is the soul of this bridge.</p>
+    <p>To someone else, it may have been just an ordinary bridge. To me, it held a feeling of freedom that nothing else could quite recreate. I hope this piece shares something of that feeling with someone else.</p>
+    <div class="credits">Jaewon Jo · u1624903<br>A physical piece (hard copy).<br>Diamond painting completed using a DIY kit.</div>
+    <p id="audio-credit" class="credits" hidden></p>
+  </article>
+      </div>
+      <footer class="gallery-footer">
+        <div class="work-details"><div class="work-title"><span class="title">Freedom</span><span class="byline">Jaewon Jo <span> / </span> u1624903</span></div><span class="music-credit">Nujabes - Aruarian Dance</span></div>
+        <div class="controls">
+          <span id="sound-status" role="status">Soundtrack not yet added</span>
+          <button id="sound-button" class="text-button" disabled>Play sound</button>
+          <button id="fullscreen" class="text-button">Full screen</button>
+          <button id="restart" class="text-button">Replay</button>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+</body>
+</html>
