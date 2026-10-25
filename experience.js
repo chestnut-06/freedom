@@ -31,14 +31,6 @@
   function prepareAudio() {
     if (!config.audio) return Promise.resolve();
     try {
-      // iOS 17+ defaults Web Audio to an ambient session, which follows
-      // the Ring/Silent switch. This soundtrack is user-requested music.
-      // Keep older browsers working if the optional API is absent or denied.
-      try {
-        if (navigator.audioSession && navigator.audioSession.type !== 'playback') {
-          navigator.audioSession.type = 'playback';
-        }
-      } catch (_) { /* Retain standard Web Audio playback. */ }
       if (!context) {
         context = new (window.AudioContext || window.webkitAudioContext)();
         gain = context.createGain(); gain.gain.value = 0; gain.connect(context.destination);
